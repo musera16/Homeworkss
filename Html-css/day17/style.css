@@ -1,26 +1,29 @@
-body{
-    background-color:rgb(100, 123, 125);
-    font-family: "verdana";
-    color: rgb(116, 108, 94);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+body {
+    background-color: rgb(28, 130, 220);
+    color:rgb(145, 140, 140);
+    font-family: 'Montserrat', sans-serif;
 }
-h1{
+#h1-1 {/*For the title*/
     text-align: center;
-    font-size: 55px;
-    font-weight: 800;
+    font-size: 50px;
 }
-h2{
-    font-size: 40px;
-    font-weight: 600;
+h1 {
+    font-size: 45px;
 }
-h3{
-    font-size: 25px;
-    font-style: italic;
+
+h2 {/*For the second title*/
+    font-size: 35px;
 }
-button{
-    background-color: rgb(30, 163, 193);
-    font-size: 25px;
-    font-weight: 700;
+
+h3 {/*For the third title*/
+    font-size: 30px;
 }
-pre{
-    font-size: 15px;
+
+button {
+    background-color:rgb(10, 72, 91);
+    color:rgb(137, 119, 119);
+    font-size: 20px;
 }
