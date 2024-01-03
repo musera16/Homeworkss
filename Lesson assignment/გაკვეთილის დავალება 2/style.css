@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&family=Rubik+Doodle+Shadow&display=swap');
 
 html {
-    background-color: #108ee8;
+    background-color: #546775;
     font-family: Roboto;
 }
 body, ul {
@@ -10,7 +10,7 @@ body, ul {
     list-style: none;
 }
 nav {
-    background-color: #10d18d;
+    background-color: #1037d1;
 }
 nav ul {
     display: flex;
@@ -21,7 +21,7 @@ nav ul li {
     font-size: 20px;
 }
 nav ul li a  {
-    color:white;
+    color:rgb(111, 132, 143);
     text-decoration: none;
     padding: 20px 15px;
     display: inline-block;
@@ -94,7 +94,7 @@ nav ul li a:hover {
 }
 #contact {
     width: auto;
-    height: 600px;
+    height: 1500px;
 }
 #call {
     height: 10%;
@@ -103,20 +103,7 @@ nav ul li a:hover {
     top: 225%;
     left: 12%;
 }
-#gmail{
-    height: 8%;
-    border-radius: 20px;
-    position: absolute;
-    top: 240%;
-    left: 11.5%;
-}
-#instagram {
-    height: 10%;
-    border-radius: 20px;
-    position: absolute;
-    top: 260%;
-    left: 11.5%;
-}
+
 #facebook {
     height: 10%;
     border-radius: 20px;
@@ -124,44 +111,11 @@ nav ul li a:hover {
     top: 260%;
     left: 17.5%;
 }
-#github {
-    height: 10.5%;
-    border-radius: 20px;
-    position: absolute;
-    top: 260%;
-    left: 23.5%;
-}
-#input-1 {
-    position: absolute;
-    top: 225%;
-    left: 50%;
-    height: 7%;
-    width: 30%;
-    font-size: 150%;
-    border-radius: 10px;
-}
-#input-2 {
-    position: absolute;
-    top: 235%;
-    left: 50%;
-    height: 7%;
-    width: 30%;
-    font-size: 150%;
-    border-radius: 10px;
-}
-#input-3 {
-    position: absolute;
-    top: 245%;
-    left: 50%;
-    height: 7%;
-    width: 30%;
-    font-size: 150%;
-    border-radius: 10px;
-}
+
 #div-2 {
     width: auto;
     height: 50px;
-    background-color: #0a748f;
+    background-color: #2fc71f;
 }
 
 .submit-button {
@@ -177,8 +131,8 @@ nav ul li a:hover {
     left: 61%;
 }
 .color-T {
-    color: #bebe3e;
+    color: #121bc6;
 }
 .color-I {
-    color: #b4b41a;
+    color: #121bc6;
 }
