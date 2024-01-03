@@ -21,13 +21,13 @@ nav ul li {
     font-size: 20px;
 }
 nav ul li a  {
-    color:rgb(111, 132, 143);
+    color:rgb(37, 43, 46);
     text-decoration: none;
     padding: 20px 15px;
     display: inline-block;
 }
 nav ul li a:hover {
-    background-color: #1e6086;
+    background-color: #5900ff;
 }
 
 #h1-1 {
@@ -102,6 +102,8 @@ nav ul li a:hover {
     position: absolute;
     top: 225%;
     left: 12%;
+
+
 }
 
 #facebook {
@@ -131,7 +133,7 @@ nav ul li a:hover {
     left: 61%;
 }
 .color-T {
-    color: #121bc6;
+    color: #5900ff;
 }
 .color-I {
     color: #121bc6;
