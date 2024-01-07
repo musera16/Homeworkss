@@ -23,11 +23,11 @@ nav ul li {
 nav ul li a  {
     color:rgb(37, 43, 46);
     text-decoration: none;
-    padding: 20px 15px;
+    padding: 25px 15px;
     display: inline-block;
 }
 nav ul li a:hover {
-    background-color: #5900ff;
+    background-color: #e1d9ef;
 }
 
 #h1-1 {
