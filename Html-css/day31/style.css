@@ -3,7 +3,7 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #1e283d;
+    background-color: #050c03;
     font-family: "Roboto";
 }
 ul{
@@ -25,16 +25,16 @@ Header a{
     text-decoration: none;
     padding: 10px;
     text-transform: uppercase;
-    color: #00b3ff;
+    color: #acee8e;
 }
 p, label{
-    color: #0f5bbe;
+    color: #083206;
 }
 #img1, #img2, #img3{
     width: 500px;
     height: 300px;
     border-radius: 8px;
-    border: 1px #61ddf3 solid;
+    border: 1px #64f861 solid;
 }
 .main_div1, .main_div2, .main_div3{
     display: flex;
@@ -43,16 +43,16 @@ p, label{
 h1{
     font-size: 60px;
     padding: 10px;
-    color: #1364dd;
+    color: #35bc43;
 }
 #h2_1{
     font-size: 30px;
     padding: 10px;
-    color: #1542be;
+    color: #2a6131;
 }
 #h2_2, #h2_3, #h2_4{
     font-size: 40px;
-    color: #047bf1;
+    color: #47e557;
 }
 .div2, .div4{
     margin-left: 5%;
@@ -75,11 +75,11 @@ h1{
     height: 30px;
     border-radius: 4px;
     border: none;
-    background-color: #650df3;
-    color: rgb(18, 92, 210);
+    background-color: #70e192;
+    color: black;
 }
 #textarea1{
-    background-color: #6a47cc;
+    background-color: #96dc8d;
 }
 .submit_div{
     text-align: center;
@@ -90,7 +90,7 @@ h1{
     height: 50px;
     border-radius: 4px;
     border: none;
-    background-color: #092468;
+    background-color: #1c3a20;
     font-size: 20px;
 }
 form input, form textarea{
@@ -100,7 +100,7 @@ form input, form textarea{
     text-decoration: none;
     font-size: 20px;
     margin-top: 10%;
-    color: #17c8ec;
+    color: #7cd78e;
 }
 footer{
     text-align: center;

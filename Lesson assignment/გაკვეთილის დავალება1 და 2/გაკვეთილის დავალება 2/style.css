@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&family=Rubik+Doodle+Shadow&display=swap');
+
+html {
+    background-color: #546775;
+    font-family: Roboto;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav {
+    background-color: #1037d1;
+}
+nav ul {
+    display: flex;
+    justify-content: right;
+}
+nav ul li {
+    margin: 0 20px;
+    font-size: 20px;
+}
+nav ul li a  {
+    color:rgb(37, 43, 46);
+    text-decoration: none;
+    padding: 25px 15px;
+    display: inline-block;
+}
+nav ul li a:hover {
+    background-color: #e1d9ef;
+}
+
+#h1-1 {
+    position: absolute;
+    top: -0.5%;
+    left: 3%;
+}
+#h1-2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 400%;
+}
+#h2-1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+#h2-2{
+    position: absolute;
+    top: 95%;
+    left: 45%;
+    font-size: 50px;
+}
+#h2-3{
+    position: absolute;
+    top: 195%;
+    left: 30%;
+    font-size: 50px;
+}
+#h3-1 {
+    position: absolute;
+    top: 225%;
+    left: 17%;
+}
+#h3-2 {
+    position: absolute;
+    top: 239%;
+    left: 17%;
+}
+#h4-1 {
+    position: absolute;
+    top: 110%;
+    left: 45%;
+}
+#p-1 {
+    position:absolute;
+    left: 38.5%
+}
+#img-1 {
+    height: 70%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+}
+#home {
+    width: auto;
+    height: 500px;
+}
+#about {
+    width: auto;
+    height: 600px;
+}
+#contact {
+    width: auto;
+    height: 1500px;
+}
+#call {
+    height: 10%;
+    border-radius: 20px;
+    position: absolute;
+    top: 225%;
+    left: 12%;
+
+
+}
+
+#facebook {
+    height: 10%;
+    border-radius: 20px;
+    position: absolute;
+    top: 260%;
+    left: 17.5%;
+}
+
+#div-2 {
+    width: auto;
+    height: 50px;
+    background-color: #2fc71f;
+}
+
+.submit-button {
+    background-color: #57c016;
+    border: none;
+    color: rgb(76, 170, 197);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    top: 257%;
+    left: 61%;
+}
+.color-T {
+    color: #5900ff;
+}
+.color-I {
+    color: #121bc6;
+}
