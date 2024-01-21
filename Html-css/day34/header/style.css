@@ -1,0 +1,34 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #393741;
+}
+
+header {
+    background-color: hwb(103 16% 82%);
+    color: hsl(0, 86%, 47%);
+    padding: 15px;
+    text-align: center;
+}
+ 
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(1, 90%, 36%);
+    padding: 10px;
+}
+
+nav a {
+    color: hsl(231, 8%, 34%);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
