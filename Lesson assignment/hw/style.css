@@ -1,0 +1,13 @@
+div {
+    width: 20%;
+    height: 20%;
+    background-color: lightgreen;
+    margin: auto;
+    margin-top: 20%;
+    transition-duration: 0.5s;
+    transform-origin: bottom left;
+}
+
+div:hover {
+    transform: rotate(-90deg);
+}
