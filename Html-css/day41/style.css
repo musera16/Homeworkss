@@ -14,11 +14,9 @@
 .animation{
     width: 180px;
     height: 180px;
-    background-color: rgb(20, 197, 20);
-    margin-left: 60px;
-    margin-top: 60px;
+    background-color: rgb(20, 73, 197);
     position: relative;
-    animation: mymove 5s infinite;
+    animation: mymove 0.5s infinite;
     transform: transform 0.50s;
 }
 

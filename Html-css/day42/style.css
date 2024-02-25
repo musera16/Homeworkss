@@ -1,0 +1,48 @@
+body{
+    width:100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 8, 8);
+}
+
+.square{
+    background-color: rgba(0, 0, 0, 0.573);
+    width:150px;
+    height:22px;
+    transition: 0.5s;
+    animation-name: move;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: -80px;
+    
+}
+
+@keyframes move{
+    0%{
+       background-color: rgb(28, 199, 36);
+       box-shadow: 0px 0px 50px rgba(20, 201, 56, 0.59);
+       border-radius: 10%;
+       transform: translateX(300px);
+    }
+    50%{
+        background-color: rgb(25, 0, 255);
+        box-shadow: 0px 0px 50px rgba(1, 34, 141, 0.629);
+        border-radius: 10%;
+        transform: translateX(550px);
+    }
+    100%{
+        background-color: rgb(37, 26, 190);
+        box-shadow: 0px 0px 50px rgba(8, 25, 217, 0.705);
+        border-radius: 10%;
+        transform: translateX(300px);
+    }
+    
+}
+
+img{
+    width:700px;
+    margin-right: 190px;
+}
