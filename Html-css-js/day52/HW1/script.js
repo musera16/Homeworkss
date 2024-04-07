@@ -9,6 +9,6 @@ function infoJoin(name, surname, age, location, interest) {
     return info;
 }
 
-// მაგალითის გამოყენება:
+// Using an example:
 var myInfo = infoJoin("Nika", "Museride", 16, "Tbilisi", "coding");
 console.log(myInfo);
