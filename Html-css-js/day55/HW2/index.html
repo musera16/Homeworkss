@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Input Values</title>
+</head>
+<body>
+
+<form id="myForm">
+    <label for="input1">Input 1:</label>
+    <input type="text" id="input1" name="input1"><br>
+    
+    <label for="input2">Input 2:</label>
+    <input type="text" id="input2" name="input2"><br>
+    
+    <label for="input3">Input 3:</label>
+    <input type="text" id="input3" name="input3"><br>
+    
+    <!-- Add more inputs as needed -->
+    
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script>
+function submitForm() {
+    // Get input values
+    let input1Value = document.getElementById("input1").value;
+    let input2Value = document.getElementById("input2").value;
+    let input3Value = document.getElementById("input3").value;
+    
+    // Print input values to console
+    console.log("Input 1:", input1Value);
+    console.log("Input 2:", input2Value);
+    console.log("Input 3:", input3Value);
+    
+    // Add more console.log statements for additional inputs if needed
+}
+</script>
+
+</body>
+</html>
