@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+
+<script>
+// Ask the user for the name of the element they want to create
+const elementName = prompt("Please enter the name of the element you want to create:");
+
+// Check if the user entered something
+if (elementName) {
+    // Create the element using the name provided by the user
+    const newElement = document.createElement(elementName);
+
+    // Set some content for the new element
+    newElement.textContent = "This is a " + elementName + " element created dynamically!";
+
+    // Append the new element to the body of the document
+    document.body.appendChild(newElement);
+} else {
+    // If no name was entered, display an alert
+    alert("You didn't enter an element name.");
+}
+</script>
+
+</body>
+</html>
