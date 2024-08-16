@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move the Block</title>
+    <style>
+        #container {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+        #child-container {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div id="child-container"></div>
+</div>
+
+<script>
+    const child = document.getElementById("child-container");
+    let left = 0;
+    let topPos = 0;
+
+    document.addEventListener("keydown", function(event) {
+        const step = 10;
+
+        if (event.key === "ArrowRight") {
+            left = Math.min(left + step, 290); // Prevent moving beyond right edge
+        }
+        if (event.key === "ArrowLeft") {
+            left = Math.max(left - step, 0); // Prevent moving beyond left edge
+        }
+        if (event.key === "ArrowDown") {
+            topPos = Math.min(topPos + step, 290); // Prevent moving beyond bottom edge
+        }
+        if (event.key === "ArrowUp") {
+            topPos = Math.max(topPos - step, 0); // Prevent moving beyond top edge
+        }
+
+        child.style.left = left + 'px';
+        child.style.top = topPos + 'px';
+    });
+</script>
+
+</body>
+</html>
