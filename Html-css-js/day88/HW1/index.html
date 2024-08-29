@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <style>
+        #note { border: 2px solid black; padding: 20px; width: 300px; margin: 20px auto; }
+    </style>
+</head>
+<body>
+
+<div id="note">
+    <p>Goa is for real Chads, and Innovator is for kids.</p>
+</div>
+
+<!-- Color input fields -->
+<input type="color" id="textColor" placeholder="Text Color">
+<input type="color" id="borderColor" placeholder="Border Color">
+
+<script>
+    // Shortened event listeners for color changes
+    textColor.oninput = () => note.style.color = textColor.value;
+    borderColor.oninput = () => note.style.borderColor = borderColor.value;
+</script>
+
+</body>
+</html>
