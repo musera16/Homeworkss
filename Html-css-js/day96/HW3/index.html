@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Delete Example</title>
+</head>
+<body>
+    <script>
+        const myMap = new Map([
+            ['წელი', 2024],
+            ['ქვეყანა', 'საქართველო'],
+            ['ქალაქი', 'თბილისი']
+        ]);
+
+        // წაშალეთ ერთი წყვილი
+        myMap.delete('ქალაქი');
+
+        // გამოიტანეთ დარჩენილი წყვილები
+        myMap.forEach((v, k) => console.log(`${k}: ${v}`));
+    </script>
+</body>
+</html>

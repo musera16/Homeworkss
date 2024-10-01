@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Function Example</title>
+    <script>
+        function Animal(color, breed, length) {
+            this.color = color;
+            this.breed = breed;
+            this.length = length;
+            this.bark = () => "Woof! Woof!";
+            this.describe = () => `This is a ${color} ${breed}.`;
+        }
+
+        let mastiff = new Animal("dark brown", "Mastiff", 100);
+
+        console.log(mastiff.describe()); // This is a dark brown Mastiff.
+        console.log(mastiff.bark());     // Woof! Woof!
+    </script>
+</head>
+<body>
+</body>
+</html>

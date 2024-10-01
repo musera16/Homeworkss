@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Class Example</title>
+    <script>
+        // Define a simple class named Person
+        class Person {
+            constructor(name, age) {
+                // Assigning name and age to the object
+                this.name = name;
+                this.age = age;
+            }
+            
+            // Method to greet with name and age
+            greet() {
+                return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+            }
+        }
+
+        // Creating an instance of the Person class
+        let person1 = new Person("Nika", 16);
+
+        // Display the greeting message in the console
+        console.log(person1.greet());
+    </script>
+</head>
+<body>
+</body>
+</html>

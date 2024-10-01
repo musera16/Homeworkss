@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Word Example</title>
+</head>
+<body>
+    <p id="text">ეს არის ტექსტი, რომელშიც უნდა გამოვყოფოთ კონკრეტული სიტყვა.</p>
+    <button onclick="document.getElementById('text').innerHTML = document.getElementById('text').innerHTML.replace(/(სიტყვა)/gi, '<mark>$&</mark>')">მონიშნე</button>
+</body>
+</html>

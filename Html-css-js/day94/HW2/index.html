@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Class Example</title>
+    <script>
+        // Base class Person
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            greet() {
+                return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+            }
+        }
+
+        // Derived class Student that extends Person
+        class Student extends Person {
+            constructor(name, age, grade) {
+                super(name, age); // Call the parent constructor
+                this.grade = grade;
+            }
+
+            study() {
+                return `${this.name} is studying.`;
+            }
+        }
+
+        // Create an instance of Student class
+        let student1 = new Student("Nika", 16, "B");
+
+        // Display the study message in the console
+        console.log(student1.study());
+    </script>
+</head>
+<body>
+</body>
+</html>

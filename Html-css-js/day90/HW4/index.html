@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Example</title>
+</head>
+<body>
+    <h1>ობიექტის დესტრუქცია</h1>
+    <script>
+        // Define the person object
+        let person = {
+            name: "ნიკა", // person's name
+            age: 16,      // person's age
+            job: "მოსწავლე" // person's job
+        };
+
+        // Define the house object
+        let house = {
+            surname: "მუსერიძე", // last name
+            address: "თბილისი, გოგებაშვილი ქ. 30" // address
+        };
+
+        // Merge the person and house objects into a new object
+        let personWithHouse = Object.assign({}, person, house);
+
+        // Destructure properties from the merged object
+        const { name, age, job, surname, address } = personWithHouse;
+
+        // Log the destructured variables to the console
+        console.log("სახელი:", name);
+        console.log("ასაკი:", age);
+        console.log("მუშაობა:", job);
+        console.log("გვარი:", surname);
+        console.log("მისამართი:", address);
+    </script>
+</body>
+</html>
