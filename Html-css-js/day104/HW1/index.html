@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        .counter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="module">
+        import { createRoot } from 'react-dom/client';
+        import React, { useState } from 'react';
+
+        function App() {
+            const [count, setCount] = useState(0);
+
+            return (
+                <div className="counter">
+                    <h1>Counter: {count}</h1>
+                    <button onClick={() => setCount(count + 1)}>Increase</button>
+                    <button onClick={() => setCount(count - 1)}>Decrease</button>
+                    <button onClick={() => setCount(0)}>Reset</button>
+                </div>
+            );
+        }
+
+        const root = createRoot(document.getElementById('app'));
+        root.render(<App />);
+    </script>
+    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+</body>
+</html>

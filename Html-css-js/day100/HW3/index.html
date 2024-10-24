@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Generator</title>
+</head>
+<body>
+    <button onclick="document.getElementById('letter').innerText = gen.next().value || 'Done'">Next Letter</button>
+    <p id="letter">H</p>
+
+    <script>
+        function* letterByLetter(word) {
+            yield* word;
+        }
+        const gen = letterByLetter("Hello");
+    </script>
+</body>
+</html>

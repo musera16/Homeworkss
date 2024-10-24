@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie List</title>
+    <style>
+        body { font-family: Arial; background: #f0f0f0; }
+        ul { list-style: none; padding: 0; }
+        li { background: #fff; margin: 5px; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Movies</h1>
+    <ul id="movieList"></ul>
+
+    <script type="module">
+        import React from 'react';
+        import { createRoot } from 'react-dom/client';
+
+        const movies = ["Inception", "Interstellar", "The Dark Knight", "Pulp Fiction", "The Matrix"];
+
+        function App() {
+            return (
+                <ul>
+                    {movies.map((movie, i) => <li key={i}>{movie}</li>)}
+                </ul>
+            );
+        }
+
+        createRoot(document.getElementById('movieList')).render(<App />);
+    </script>
+    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+</body>
+</html>

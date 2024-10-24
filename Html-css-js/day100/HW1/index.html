@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+</head>
+<body>
+    <button onclick="document.getElementById('number').innerText = gen.next().value">Next Number</button>
+    <p id="number">0</p>
+
+    <script>
+        function* infiniteNumbers() {
+            let num = 0;
+            while (true) yield num++;
+        }
+        const gen = infiniteNumbers();
+    </script>
+</body>
+</html>

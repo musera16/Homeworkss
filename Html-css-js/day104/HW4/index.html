@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body { font-family: Arial; margin: 0; }
+        nav { background: #333; padding: 10px; }
+        ul { display: flex; padding: 0; list-style: none; }
+        li { margin: 0 15px; }
+        a { color: #fff; text-decoration: none; }
+        .hero { padding: 50px; text-align: center; }
+    </style>
+</head>
+<body>
+    <nav><ul id="navList"></ul></nav>
+    <div class="hero">
+        <h1>Welcome</h1>
+        <p>Simple React website.</p>
+    </div>
+    <div class="counter">
+        <h2>Counter: <span id="count">0</span></h2>
+        <button id="increment">+</button>
+        <button id="decrement">-</button>
+    </div>
+
+    <script type="module">
+        import React, { useState } from 'react';
+        import { createRoot } from 'react-dom/client';
+
+        const arrNav = ["Home", "About", "Contacts"];
+
+        function App() {
+            const [count, setCount] = useState(0);
+            return (
+                <>
+                    <nav>
+                        <ul>
+                            {arrNav.map((item, i) => <li key={i}><a href={`#${item.toLowerCase()}`}>{item}</a></li>)}
+                        </ul>
+                    </nav>
+                    <h2>Counter: {count}</h2>
+                    <button onClick={() => setCount(c => c + 1)}>+</button>
+                    <button onClick={() => setCount(c => c - 1)}>-</button>
+                </>
+            );
+        }
+
+        createRoot(document.getElementById('navList')).render(<App />);
+    </script>
+</body>
+</html>
