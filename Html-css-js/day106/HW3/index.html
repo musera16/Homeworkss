@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loop Example</title>
+</head>
+<body>
+  <script>
+    let t = "";
+    for (let i = 1; i < 6; i++) {
+      t += "For: " + i + "<br>";
+    }
+
+    let j = 1;
+    while (j < 6) {
+      t += "While: " + j + "<br>";
+      j++;
+    }
+    
+    document.body.innerHTML = t;
+  </script>
+</body>
+</html>
