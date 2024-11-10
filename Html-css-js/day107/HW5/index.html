@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Samsung</title>
+</head>
+<body>
+    <h1>Samsung Electronics</h1>
+    <p>Click the button to learn some interesting facts about Samsung:</p>
+    <button onclick="showSamsungFacts()">Show Facts</button>
+    <p id="samsungFacts"></p>
+
+    <script>
+        function showSamsungFacts() {
+            document.getElementById("samsungFacts").innerText = 
+                "1. Samsung was founded in 1938 as a trading company in South Korea.\n" +
+                "2. Samsung's first product was dried fish, vegetables, and noodles.\n" +
+                "3. Samsung is the largest manufacturer of smartphones worldwide.";
+        }
+    </script>
+</body>
+</html>

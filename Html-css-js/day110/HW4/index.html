@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Movies</title>
+</head>
+<body>
+    <h1>Action Movies</h1>
+    <div id="movies"></div>
+
+    <script>
+        function Movie(title, year) {
+            const movieDiv = document.createElement("div");
+            movieDiv.style.margin = "10px 0";
+            movieDiv.innerText = `${title} (${year})`;
+            return movieDiv;
+        }
+
+        const movies = [
+            { title: "Mad Max: Fury Road", year: 2015 },
+            { title: "John Wick", year: 2014 },
+            { title: "Terminator", year: 1984 }
+        ];
+
+        const moviesContainer = document.getElementById("movies");
+        movies.forEach(movie => moviesContainer.appendChild(Movie(movie.title, movie.year)));
+    </script>
+</body>
+</html>

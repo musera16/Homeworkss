@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage Component</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        function Button({ text, color }) {
+            const button = document.createElement("button");
+            button.innerText = text;
+            button.style.backgroundColor = color;
+            return button;
+        }
+
+        function HomePage() {
+            const container = document.createElement("div");
+
+            const welcomeMessage = document.createElement("h1");
+            welcomeMessage.innerText = "Welcome to Our Website!";
+            container.appendChild(welcomeMessage);
+
+            const redButton = Button({ text: "Learn More", color: "red" });
+            const blueButton = Button({ text: "Get Started", color: "blue" });
+            const greenButton = Button({ text: "Contact Us", color: "green" });
+
+            container.appendChild(redButton);
+            container.appendChild(blueButton);
+            container.appendChild(greenButton);
+
+            return container;
+        }
+
+        const app = document.getElementById("app");
+        app.appendChild(HomePage());
+    </script>
+</body>
+</html>

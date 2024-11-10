@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crocodiles</title>
+</head>
+<body>
+    <h1>About Crocodiles</h1>
+    <p>Click the button to learn some interesting facts about crocodiles:</p>
+    <button onclick="showFacts()">Show Facts</button>
+    <p id="facts"></p>
+
+    <script>
+        function showFacts() {
+            document.getElementById("facts").innerText = 
+                "1. Crocodiles have been on Earth for around 200 million years.\n" +
+                "2. They can live up to 70-100 years.\n" +
+                "3. Some crocodiles can grow over 20 feet long and weigh over 2,000 pounds.";
+        }
+    </script>
+</body>
+</html>

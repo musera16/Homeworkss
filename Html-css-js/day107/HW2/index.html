@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers: Last Two Movies</title>
+</head>
+<body>
+    <h1>Avengers: Last Two Movies</h1>
+    <p>Click the button to see the titles, budget, and total earnings:</p>
+    <button onclick="showMovies()">Show Movies</button>
+    <p id="movies"></p>
+
+    <script>
+        function showMovies() {
+            document.getElementById("movies").innerText = 
+                "Avengers: Infinity War (2018)\n" +
+                "Budget: $325 million\n" +
+                "Earnings: $2.048 billion\n\n" +
+                "Avengers: Endgame (2019)\n" +
+                "Budget: $356 million\n" +
+                "Earnings: $2.798 billion";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Apple</title>
+</head>
+<body>
+    <h1>Apple Inc.</h1>
+    <p>Click the button to learn some interesting facts about Apple:</p>
+    <button onclick="showAppleFacts()">Show Facts</button>
+    <p id="appleFacts"></p>
+
+    <script>
+        function showAppleFacts() {
+            document.getElementById("appleFacts").innerText = 
+                "1. Apple was founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne.\n" +
+                "2. The first Apple computer was sold for $666.66.\n" +
+                "3. Apple became the first company to reach a $1 trillion market cap in 2018.";
+        }
+    </script>
+</body>
+</html>

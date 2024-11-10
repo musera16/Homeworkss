@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Component</title>
+</head>
+<body>
+    <h1>Custom Button Component</h1>
+    <div id="app"></div>
+
+    <script>
+        function Button({ text, color }) {
+            const button = document.createElement("button");
+            button.innerText = text;
+            button.style.backgroundColor = color;
+            return button;
+        }
+
+        const app = document.getElementById("app");
+
+        const redButton = Button({ text: "Click Me", color: "red" });
+        const blueButton = Button({ text: "Submit", color: "blue" });
+        const greenButton = Button({ text: "Cancel", color: "green" });
+
+        app.appendChild(redButton);
+        app.appendChild(blueButton);
+        app.appendChild(greenButton);
+    </script>
+</body>
+</html>

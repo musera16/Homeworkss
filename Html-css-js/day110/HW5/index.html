@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Oriented Academy (GOA)</title>
+</head>
+<body>
+    <h1>Welcome to GOA (Goal Oriented Academy)</h1>
+    <div id="content"></div>
+
+    <script>
+        function AcademyInfo(content) {
+            const div = document.createElement("div");
+            div.style.margin = "15px 0";
+            div.style.padding = "10px";
+            div.style.border = "1px solid #000";
+            div.innerText = content;
+            return div;
+        }
+
+        const academyContent = [
+            "GOA (Goal Oriented Academy) is the place where programming skills meet excellence.",
+            "At GOA, we focus on developing problem-solving abilities and practical coding knowledge.",
+            "Students learn programming languages like Python and JavaScript and work on real-world projects.",
+            "Our goal is to provide a comprehensive learning environment that makes every student successful.",
+            "Whether you're a beginner or looking to sharpen your skills, GOA is the perfect place to start your journey."
+        ];
+
+        const contentContainer = document.getElementById("content");
+
+        academyContent.forEach(info => {
+            contentContainer.appendChild(AcademyInfo(info));
+        });
+    </script>
+</body>
+</html>
