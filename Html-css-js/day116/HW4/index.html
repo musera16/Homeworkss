@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popover Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="popover-container">
+    <div class="popover-header">
+      <p class="popover-label" onclick="highlight('products')">Products</p>
+      <p class="popover-label" onclick="highlight('solutions')">Solutions</p>
+      <p class="popover-label" onclick="highlight('pricing')">Pricing</p>
+    </div>
+    <div class="popover">
+      <p id="products" class="popover-item">Insights</p>
+      <p id="solutions" class="popover-item">Automations</p>
+      <p id="pricing" class="popover-item">Report</p>
+      <p class="popover-item">Documentation</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

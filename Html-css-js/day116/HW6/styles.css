@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1d1d; /* მუქი ნაცრისფერი თითქმის შავი */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -20px; /* წრეებს შორის ოდნავი შეხება */
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.circle-1 {
+    background-color: #2f353b; /* მუქი ნაცრისფერი */
+}
+
+.circle-2 {
+    background-color: #4c5359; /* ოდნავ ღია ნაცრისფერი */
+}
+
+.circle-3 {
+    background-color: #b1b7bd; /* თითქმის თეთრი */
+}
+
+.circle-4 {
+    background-color: #ffffff; /* თეთრი */
+}
+
+/* როცა წრეები შეხდება, მათი ფერი უნდა შეერიოს */
+.circle-container .circle {
+    transition: background-color 0.3s ease;
+}
+
+.circle-1:hover, .circle-2:hover, .circle-3:hover, .circle-4:hover {
+    background-color: #8c9298; /* შეხების დროს შეფერადება */
+}
