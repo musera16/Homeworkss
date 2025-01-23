@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Style</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .profile { display: flex; align-items: center; }
+    .profile img { width: 50px; height: 50px; border-radius: 50%; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Users</h1>
+  <div id="user-list"></div>
+  <h2>Brands</h2>
+  <ul id="brand-list"></ul>
+
+  <script>
+    fetch("http://localhost:3000/users")
+      .then(response => response.json())
+      .then(users => {
+        const userList = document.getElementById("user-list");
+        users.forEach(user => {
+          userList.innerHTML += `<div class="profile"><img src="${user.profilePicture}" alt="profile" /><div><strong>${user.name}</strong><br>${user.email}</div></div>`;
+        });
+      });
+
+    fetch("http://localhost:3000/brands")
+      .then(response => response.json())
+      .then(brands => {
+        const brandList = document.getElementById("brand-list");
+        brands.forEach(brand => brandList.innerHTML += `<li>${brand}</li>`);
+      });
+  </script>
+</body>
+</html>

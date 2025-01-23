@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brands List</title>
+</head>
+<body>
+  <h1>Popular Brands</h1>
+  <ul id="brand-list"></ul>
+
+  <script>
+    // მიიღე სუათების სია სერვერიდან
+    fetch("http://localhost:3000/brands")
+      .then(response => response.json())
+      .then(brands => {
+        const brandList = document.getElementById("brand-list");
+        brands.forEach(brand => {
+          const li = document.createElement("li");
+          li.textContent = brand;
+          brandList.appendChild(li);
+        });
+      })
+      .catch(error => console.error("Error fetching brands:", error));
+  </script>
+</body>
+</html>
