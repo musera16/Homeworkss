@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Theme</title>
+  <style>
+    body[data-theme="dark"] { background: #333; color: white; }
+    body[data-theme="light"] { background: white; color: black; }
+    body[data-theme="blue"] { background: #007bff; color: white; }
+    body[data-theme="green"] { background: #28a745; color: white; }
+    body[data-theme="yellow"] { background: #ffc107; color: black; }
+  </style>
+  <script>
+    function changeTheme(theme) {
+      document.body.dataset.theme = theme;
+    }
+  </script>
+</head>
+<body data-theme="light">
+  <h1>MyAuto</h1>
+  <button onclick="changeTheme('light')">Light</button>
+  <button onclick="changeTheme('dark')">Dark</button>
+  <button onclick="changeTheme('blue')">Blue</button>
+  <button onclick="changeTheme('green')">Green</button>
+  <button onclick="changeTheme('yellow')">Yellow</button>
+</body>
+</html>

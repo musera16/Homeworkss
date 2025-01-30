@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode</title>
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.body.dataset.theme;
+      document.body.dataset.theme = currentTheme === 'dark' ? 'light' : 'dark';
+    }
+  </script>
+  <style>
+    body[data-theme="dark"] { background-color: #333; color: white; }
+    body[data-theme="light"] { background-color: white; color: black; }
+  </style>
+</head>
+<body data-theme="light">
+  <h1 id="hello-world">Hello World</h1>
+  <button onclick="toggleTheme()">Toggle Dark Mode</button>
+</body>
+</html>
