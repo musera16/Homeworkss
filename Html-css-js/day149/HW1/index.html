@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ზღვის კუები</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #87CEEB;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        img {
+            width: 200px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #008CBA;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ზღვის კუები</h1>
+    <p>ზღვის კუები საოცარი არსებები არიან, რომლებიც ოკეანეებში ცხოვრობენ.</p>
+    <img src="ზღვის_კუ.jpg" alt="ზღვის კუ">
+    <br>
+    <button id="animateBtn">დააჭირე ანიმაციისთვის</button>
+
+    <script>
+        document.getElementById("animateBtn").addEventListener("click", function() {
+            gsap.to("img", { duration: 1, y: -20, repeat: 1, yoyo: true });
+        });
+    </script>
+
+</body>
+</html>

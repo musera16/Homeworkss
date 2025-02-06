@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ამაზონის ჩანჩქერები</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #0a3d62;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #27ae60;
+        }
+        p {
+            font-size: 18px;
+        }
+        img {
+            width: 250px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #1abc9c;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ამაზონის ჩანჩქერები</h1>
+    <p>აღმოაჩინე ბუნების სიდიადე და სუფთა ჰაერი...</p>
+    <img src="ამაზონის ჩანჩქერები.jpg" alt="ამაზონის ჩანჩქერი">
+    <br>
+    <button id="animateBtn">გააცოცხლე ჩანჩქერი</button>
+
+    <script>
+        document.getElementById("animateBtn").addEventListener("click", function() {
+            gsap.to("img", { duration: 1, y: 10, repeat: 5, yoyo: true });
+        });
+    </script>
+
+</body>
+</html>

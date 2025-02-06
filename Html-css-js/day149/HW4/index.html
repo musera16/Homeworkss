@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Batman Who Laughs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000;
+            color: #ff0000;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 18px;
+        }
+        img {
+            width: 250px;
+            margin-top: 20px;
+            border-radius: 10px;
+            filter: grayscale(100%);
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #ff0000;
+            color: black;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Batman Who Laughs</h1>
+    <p>ჩაეშვი სიგიჟეში და გახდი ბნელი რაინდი...</p>
+    <img src="batman laugh hehehe.jpg" alt="The Batman Who Laughs">
+    <br>
+    <button id="animateBtn">იცინე...</button>
+
+    <script>
+        document.getElementById("animateBtn").addEventListener("click", function() {
+            gsap.to("img", { duration: 0.5, scale: 1.2, rotation: 10, yoyo: true, repeat: 3 });
+        });
+    </script>
+
+</body>
+</html>

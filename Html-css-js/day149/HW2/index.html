@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტურისტული სააგენტო</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #4CAF50;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        img {
+            width: 250px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #FF9800;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>აღმოაჩინე სამყარო</h1>
+    <p>ჩვენს ტურისტულ სააგენტოსთან ერთად, იმოგზაურე საუკეთესო ადგილებში!</p>
+    <img src="ლამაზი ამდგილი.jpg" alt="ტურისტული სააგენტო">
+    <br>
+    <button id="animateBtn">დაწყება</button>
+
+    <script>
+        document.getElementById("animateBtn").addEventListener("click", function() {
+            gsap.to("img", { duration: 1, scale: 1.1, repeat: 1, yoyo: true });
+        });
+    </script>
+
+</body>
+</html>
