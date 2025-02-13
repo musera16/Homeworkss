@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Phone</title>
+    <style>
+        body { text-align: center; font-family: Arial; background: black; color: green; }
+        #screen { border: 5px solid gray; width: 200px; height: 300px; margin: auto; padding-top: 50px; }
+        button { width: 50px; height: 50px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <div id="screen">Loading...</div>
+    <button onclick="fetchText()">Fetch</button>
+    <script>
+        async function fetchText() {
+            let res = await fetch('/api/message');
+            let text = await res.text();
+            document.getElementById('screen').innerText = text;
+        }
+
+        const express = require('express');
+const app = express();
+
+app.get('/api/message', (req, res) => {
+    res.send('Hello, Old Phone!');
+});
+
+app.listen(3000, () => console.log('Server running on port 3000'));
+
+    </script>
+</body>
+</html>

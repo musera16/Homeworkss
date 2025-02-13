@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Shop</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .phone { border: 1px solid #ddd; padding: 10px; margin: 10px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <h1>Phone Shop</h1>
+    <div id="phones"></div>
+
+    <script src="server.js"></script>
+
+    <script>
+        async function loadPhones() {
+            let res = await fetch('/api/phones');
+            let phones = await res.json();
+            let container = document.getElementById('phones');
+            container.innerHTML = phones.map(p => `<div class="phone"><h3>${p.name}</h3><p>${p.price}€</p></div>`).join('');
+        }
+        loadPhones();
+    </script>
+</body>
+</html>
